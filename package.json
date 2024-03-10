@@ -4,8 +4,15 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "lodash": "^4.17.21",
+    "lodash.debounce": "^4.0.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
+    "react-select": "^5.8.0"
   },
   "scripts": {
     "api-proxy": "lcp --proxyUrl http://v0.postcodeapi.com.au",
@@ -18,13 +25,13 @@
     "not dead"
   ],
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "local-cors-proxy": "^1.1.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "local-cors-proxy": "^1.1.0",
     "vite": "^5.1.4"
   }
 }

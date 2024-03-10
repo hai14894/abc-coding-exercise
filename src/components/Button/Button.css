@@ -1,9 +1,8 @@
-.Button {
-  background: #fdc605;
-  border: none;
-}
-
-.Button svg {
-  height: 1.5rem;
-  width: 1.5rem;
+.search-button {
+  background-color: yellow;
+  color: black;
+  border: 2px solid black;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }

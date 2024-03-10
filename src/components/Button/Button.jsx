@@ -1,30 +1,12 @@
-import React from "react";
-import iconPath from "./icons.svg";
-import "./Button.css";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import './Button.css'
 
-/**
- * <Button
- *   className="MyButton"
- *   onClick={() => console.log('Click')} 
- * />
- *
- * @prop {Function} onClick
- * @prop {mixed} ... All other props will be forwarded to the native DOM button.
+const Button = React.forwardRef(({ onClick }, ref) => (
+  <button ref={ref} className="search-button" onClick={onClick} aria-label="Search for suburbs">
+    <FontAwesomeIcon icon={faArrowRight} />
+  </button>
+));
 
- */
-export function Button(props) {
-  const { onClick, className, ...otherProps } = props;
-
-  return (
-    <button
-      type="button"
-      className={"Button " + (className || "")}
-      onClick={onClick}
-      {...otherProps}
-    >
-      <svg viewBox="0 0 24 24" width="24" height="16">
-        <use xlinkHref={iconPath + "#dls-icon-arrow-right"} />
-      </svg>
-    </button>
-  );
-}
+export default Button;
