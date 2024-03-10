@@ -4,7 +4,7 @@
 
 * Added aria-label attributes to interactive elements (Input, search button, ResultList items).
 * Implemented a different background color for ResultList items when hovered to improve visibility.
-* Ensured sufficient color contrast for text and elements using the Colour Contrast Analyser tool (Colour Contrast Analyser).
+* Ensured sufficient color contrast for text and elements using the Colour Contrast Analyser tool (https://www.tpgi.com/color-contrast-checker/).
 * Restored focus to the Input after selecting an option.
 
 ## Futher enhancements that could be made :
